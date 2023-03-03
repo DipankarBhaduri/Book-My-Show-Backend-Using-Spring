@@ -10,8 +10,6 @@ import com.BookMyShow.Repositories.TicketRepository;
 import com.BookMyShow.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-
 import java.util.List;
 
 @Service
@@ -21,7 +19,6 @@ public class TicketService {
     private UserRepository userRepository ;
     @Autowired
     private ShowRepository showRepository ;
-
     @Autowired
     private TicketRepository ticketRepository ;
 
@@ -64,7 +61,6 @@ public class TicketService {
         } catch ( Exception e ){
             return e.getMessage() ;
         }
-
         return "Ticket Booked Successfully" ;
     }
 
